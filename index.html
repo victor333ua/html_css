@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Html/css</title>
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--    <script src="https://kit.fontawesome.com/e64933945b.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+<header class="header">
+    <div class="header-container">
+        <svg viewBox="0 0 348 102" class="logo">
+            <path d="M17 77.7v-5.6c2.3 3.8 7.4 6.7 14 6.7 13.9 0 23.8-10.9 23.8-26.2 0-14.9-8.7-26-23.2-26-6.8 0-12.3
+                 2.8-14.4 5.9V5H2.3v72.6H17zm22.6-24.9c0 8.3-5.3 12.4-11.2 12.4S17 61 17 52.8c0-8.4 5.4-12.3 11.3-12.3s11.3 3.8
+                 11.3 12.3zm34.3 24.9V27.9H58.7v49.8h15.2zM95 49.1c0-5 3.2-8.7 8.2-8.7 5.5 0 8.1 3.7 8.1
+                  8.6v28.7h15.2V46.4c0-10.9-5.6-19.9-18.2-19.9-5.1 0-11.2 2.3-13.9 7v-5.7H79.7v49.8H95V49.1zM130.4 64c0 7.9 6.3
+                   15.1 17.2 15.1 6.6 0 11.4-2.8 14-7 0 3.4.4 5.2.5 5.6h13.7c-.1-.5-.6-3.8-.6-7.7V45.6c0-10.2-5.9-19.3-22.1-19.3-14.6
+                    0-21.3 9.4-21.9 16.5l13.2 2.7c.3-3.7 3.2-7.3 8.5-7.3 4.8 0 7.3 2.5 7.3 5.4 0 1.7-.9 3-3.6 3.4l-11.7 1.8c-8
+                     1.3-14.5 6.4-14.5 15.2zm22.4 4.1c-4.2 0-5.9-2.5-5.9-5.1 0-3.5 2.4-5 5.6-5.5l9.4-1.5v2.2c0 7.7-4.6 9.9-9.1
+                      9.9zm59.5-40.2c-1-.3-2.5-.5-4-.5-4 0-10.3 1.6-12.9 7.2v-6.7h-14.8v49.8h15.2V56c0-9.9 5.5-13.5 11.6-13.5
+                       1.5 0 3.1.1 4.8.5V27.9zm28.1 69l30.7-69H255l-11 26.7-12.2-26.7h-17l21 43.1-11.4 25.9h16z"
+                  fill="#121212">
+            </path>
+            <path fill="#f7991c" d="M73.9 24.8V9.5H58.6v15.3z"></path>
+            <path d="M295.7 32.9c-.5-2.3-2.4-5.3-7.2-5.3-3.9 0-7 3-7 6.3 0 3.2 2.1 5.1 5.2 5.8l3 .7c2.1.4 3.2 1.8 3.2 3.3 0
+                 1.8-1.4 3.4-4.4 3.4-3.2 0-4.9-2.2-5.1-4.5l-2.8.9c.4 3 2.8 6.3 7.9 6.3 4.5 0 7.3-3 7.3-6.3
+                  0-3-2-5.2-5.5-5.9l-3.2-.7c-1.8-.4-2.7-1.6-2.7-3.1 0-2 1.7-3.5 4.1-3.5 3 0 4.2 2.1 4.5
+                  3.6l2.7-1zm24.4-2.1v-2.7H303v2.7h7.1v18.4h2.9V30.8h7.1zM336 49.7c4.3 0 7.6-2.7 7.6-7.7V28.1h-2.9v13.8c0 3.2-1.7
+                   5-4.7 5s-4.7-1.8-4.7-5V28.1h-2.9V42c0 5 3.3 7.7 7.6 7.7zM283.6 75V59h4.4c3.9 0 7.1 2.7 7.1 8s-3.3 7.9-7.2
+                   7.9h-4.3zm4.4 2.6c5.4 0 10.1-3.6 10.1-10.5 0-7-4.7-10.6-10.1-10.6h-7.4v21.2h7.4zm25 0V56.4h-3v21.2h3zM328
+                   67c0-5.5 3.7-8.3 7.6-8.3s7.6 2.8 7.6 8.3-3.7 8.4-7.6 8.4-7.6-2.9-7.6-8.4zm-3 0c0 7.1 5.3 11 10.6 11s10.6-4
+                   10.6-11-5.3-11-10.6-11S325 59.9 325 67z" fill="#b0b0b5">
+            </path>
+        </svg>
+        <div class="nav-bar">
+            <img src="./resources/bell-1096279_640.png">
+            <input type="checkbox" id="menu-input"/>
+            <label for="menu-input" class="menu">
+                <span>V</span>
+                <div class="menu-content">
+                    <span id="name">Viktor Yasnogorodskiy</span>
+                    <a>Profile</a>
+                    <a>Log out</a>
+                </div>
+            </label>
+        </div>
+    </div>
+</header>
+
+<main class="content">
+    <div class="grid-container">
+        <div class="grid-content">
+            <div class="pict">
+                <div class="pict-cover cover">
+                    <svg width="100px" height="100px" >
+                        <g fill="none" fill-rule="evenodd">
+                            <path d="M59.927 76.881c.267.616-.427 1.205-.99.838L29.31 58.376c-2.259-1.299-1.743-3.772 0-4.526l16.585-6.125c.65-.24 1.37.07 1.647.703l12.386 28.453z" fill="#FFC712"></path>
+                            <path d="M87.193 73.214L68.999 81.09c-1.16.503-2.546-.125-3.1-1.402L42.465 25.565c-.555-1.28-.061-2.726 1.101-3.23l18.193-7.876c1.16-.502 2.548.125 3.101
+                    1.402l23.436 54.124c.554 1.28.06 2.726-1.102 3.23" fill="#00ADEE">
+                            </path>
+                            <path d="M39.682 30.034c1.279 2.9 4.213 9.704 5.36 12.368a1.137 1.137 0 01-.646 1.516l-12.679 4.757a.678.678 0 01-.859-.904l7.633-17.73a.65.65 0 011.191-.007M40.351
+                    70.35l-13.924-9.294a1.066 1.066 0 00-1.567.46l-7.976 18.206c-.404.924.53 1.864 1.455 1.465l21.889-9.473a.78.78 0 00.123-1.363" fill="#EC1848">
+                            </path>
+                            <path d="M40.351 70.35l-13.924-9.294a1.066 1.066 0 00-1.567.46l9.402 12.78 5.966-2.582a.78.78 0 00.123-1.363" fill="#C22035"></path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="pict-content">
+                    <div class="btn">Join</div>
+                </div>
+            </div>
+            <div class="qa">
+                <div class="qa-cover cover">QA</div>
+                <div class="qa-content content">Advanced online course focusing on the finer points of QA</div>
+            </div>
+            <div class="js">
+                <div class="js-cover cover">JS</div>
+                <div class="js-content content">An online intensive course on building web applications with Java Script</div>
+            </div>
+            <div class="java">
+                <div class="java-cover cover">Java</div>
+                <div class="java-content content">An online intensive course on building web applications with Java</div>
+            </div>
+            <div class="php">
+                <div class="php-cover cover">php</div>
+                <div class="php-content content">An online intensive course on building web applications with PHP</div>
+            </div>
+            <div class="net">
+                <div class="net-cover cover">.NET</div>
+                <div class="net-content content">An online intensive course on building web applications with .NET</div>
+            </div>
+            <div class="events right-tags">
+                <div class="events-cover cover right-tags-cover">Events</div>
+                <div class="events-content right-tags-content">
+                    <p>У березні-квітні відбулася серія наших онлайн трансляцій по
+                        веб-розробці під кодовою назвою Homeference. Ми на деякий час залишимо посилання на
+                        запис трансляцій нижче. Дивись, шарь з друзями, а щоб не пропустити майбутні події -
+                        підписуйся на <a href="">телеграм Binary Studio Academy</a></p>
+                </div>
+            </div>
+            <div class="blog right-tags">
+                <div class="blog-cover cover right-tags-cover">Blog</div>
+                <div class="blog-content right-tags-content">Ділимося инсайтами Академії, досвідом створення world-class проектів,
+                    та роздумами про життя, код, роботу</div>
+            </div>
+            <div class="contacts right-tags">
+                <div class="contacts-cover cover right-tags-cover">Contacts</div>
+                <div class="contacts-content">
+                    <div class="social instagram">
+                        <a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                    </div>
+                    <div class="social facebook">
+                        <a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+                    </div>
+                    <div class="social telegram">
+                        <a href="#" target="_blank"><i class="fa fa-paper-plane fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">&#169 Powered By Binary Studio Team</footer>
+</main>
+<div class="messages">
+    <div class="message mes-error">
+        <div class="mes-icon mes-error-icon">!</div>
+        <div class="mes-content">
+            <span>Error</span><br>
+            <span>Something went<br>
+                  wrong. Please try<br>
+                  again later.
+            </span>
+        </div>
+    </div>
+    <div class="message mes-success">
+        <div class="mes-icon mes-success-icon">✔</div>
+        <div class="mes-content">
+            <span>Success</span><br>
+            <span>Profile was updated</span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+<!--
+<div class="social github">
+    <a href="#" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+</div>
+<div class="social youtube">
+    <a href="#" target="_blank"><i class="fa fa-youtube fa-2x"></i></a>
+</div>
+<div class="social google-pluse">
+    <a href="#" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a>
+</div>
+<div class="social twitter">
+    <a href="#" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+</div>
+<div class="social instagram">
+    <a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+</div>
+<div class="social facebook">
+    <a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+</div>
+<div class="social skype">
+    <a href="#" target="_blank"><i class="fa fa-skype fa-2x"></i></a>
+</div>
+<div class="social vk">
+    <a href="#" target="_blank"><i class="fa fa-vk fa-2x"></i></a>
+</div>
+<div class="social odnoklassniki">
+    <a href="#" target="_blank"><i class="fa fa-odnoklassniki fa-2x"></i></a>
+</div>
+<div class="social pinterest">
+    <a href="#" target="_blank"><i class="fa fa-pinterest fa-2x"></i></a>
+</div>
+<div class="social linkedin">
+    <a href="#" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+</div>
+<div class="social telegram">
+    <a href="#" target="_blank"><i class="fa fa-paper-plane fa-2x"></i></a>
+</div>
+<div class="social tumblr">
+    <a href="#" target="_blank"><i class="fa fa-tumblr fa-2x"></i></a>
+</div>
+<div class="social windows">
+    <a href="#" target="_blank"><i class="fa fa-windows fa-2x"></i></a>
+</div>
+<div class="social whatsapp">
+    <a href="#" target="_blank"><i class="fa fa-whatsapp fa-2x"></i></a>
+</div>
+<div class="social weibo">
+    <a href="#" target="_blank"><i class="fa fa-weibo fa-2x"></i></a>
+</div>
+<div class="social dropbox">
+    <a href="#" target="_blank"><i class="fa fa-dropbox fa-2x"></i></a>
+</div>
+-->

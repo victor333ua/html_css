@@ -1,0 +1,481 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+html {
+    font-size: 16px;
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.header {
+    height: 3rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 0.5rem 12.4rem 0;
+    z-index: 1000;
+    background-color: white;
+}
+
+.header-container {
+    animation-duration: 1s;
+    display: flex;
+    animation-name: fall;
+}
+
+@keyframes fall {
+    from {margin-top: -100%;}
+    to {margin-top: 0;}
+}
+
+.logo {
+    width: 6em;
+    cursor: pointer;
+}
+.nav-bar {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+.nav-bar img {
+    height: 17px;
+    width:  20px;
+    filter: invert(81%) sepia(59%) saturate(0%) hue-rotate(134deg) brightness(90%) contrast(89%);
+}
+
+.menu {
+    height: 30px;
+    width:  30px;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #ff9300;
+    color: white;
+    margin-left: 15px;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+}
+.menu-content {
+    display: none;
+    position: absolute;
+    margin-top: 5px;
+    padding: 5px 10px;
+    box-shadow: 4px 8px rgba(0,0,0,0.2);
+    right: 0;
+    background-color: beige;
+}
+.menu-content span {
+    display: block;
+    color: grey;
+    padding: 5px 7px 5px;
+    font-family: "JetBrains Mono ExtraBold";
+    white-space: nowrap;
+    border-bottom: 2px solid grey;
+}
+.menu-content a {
+    text-decoration: none;
+    color: black;
+    text-align: left;
+    display: block;
+    font-weight: bold;
+    margin-top: 2px;
+}
+#menu-input {
+    display:none;
+}
+#menu-input:checked + label > .menu-content {
+    display: block;
+
+}
+
+.nav-bar img:hover {
+    filter: invert(59%) sepia(0%) saturate(27%) hue-rotate(279deg) brightness(105%) contrast(94%);
+}
+.menu:hover {
+    background-color: #ff8000;
+}
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+.grid-container {
+    flex: 1 0 auto;
+    box-sizing: border-box;
+    height: calc(100% - 12rem);
+    width: 100%;
+    padding: 3.5rem 12.4rem 7rem 12.4rem;
+}
+.grid-content {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(28, minmax(4px, 1fr));
+    grid-template-rows: repeat(28, minmax(2px, 1fr));
+ }
+.cover {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.content {
+    height: 100%;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 1rem;
+    box-sizing: border-box;
+}
+/*-----------------------------------------------------------------*/
+.pict {
+    grid-column: 1 / span 7;
+    grid-row: 1 / span 14;
+    position: relative;
+}
+.pict-cover {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+.pict-content {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pict-content > .btn {
+    width: 5rem;
+    background-color: #0000CD;
+    font-size: 1.5rem;
+    color: white;
+    padding:0.5rem 0 0.5rem 2rem;
+    border-radius: 0.3rem;
+}
+.pict:hover > .pict-cover {
+    transform: rotateY(90deg);
+}
+.pict:hover > .pict-content {
+    animation-name: qa;
+    animation-duration: 0.4s;
+}
+/*-----------------------------------------------------------------*/
+.qa {
+    grid-column: 1 / span 7;
+    grid-row: 15 / span 14;
+    position: relative;
+}
+.qa-cover {
+    background-color: #228B22;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8rem;
+    transition: transform 0.2s;
+}
+.qa-content {
+
+}
+
+@keyframes qa {
+    0% {opacity: 0;}
+    50% {opacity: 0; transform: rotateY(-90deg);}
+    100% {opacity: 1; transform: rotateY(0deg);}
+}
+.qa:hover > .qa-cover {
+    transform: rotateY(90deg);
+}
+.qa:hover > .qa-content {
+    animation-name: qa;
+    animation-duration: 0.4s;
+}
+
+/*-----------------------------------------------------------------*/
+.js {
+    grid-column: 8 / span 7;
+    grid-row: 1 / span 21;
+    position: relative;
+}
+.js-cover {
+    background-color: yellow;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 8rem;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+.js-content {
+
+}
+.js:hover > .js-cover {
+    transform: rotateY(90deg);
+}
+.js:hover > .js-content {
+    animation-name: qa;
+    animation-duration: 0.4s;
+}
+/*-----------------------------------------------------------------*/
+.java {
+    grid-column: 8 / span 7;
+    grid-row: 22 / 29;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+
+}
+.java-cover {
+    background-color: firebrick;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    transition: height, font-size, 1s;
+}
+.java:hover > .java-cover {
+    height: 0;
+    font-size: 0;
+}
+/*-----------------------------------------------------------------*/
+.php {
+    grid-column: 15 / 29;
+    grid-row: 1 / span 10;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+.php-cover {
+    background-color: #B0C4DE;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width, height, font-size, 1s;
+}
+.php-content {
+
+
+}
+.php:hover > .php-cover {
+    width: 0;
+    height: 0;
+    font-size: 0;
+}
+/*-----------------------------------------------------------------*/
+.net {
+    grid-column: 15 / span 9;
+    grid-row: 11 / 29;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.net-cover {
+    background-color: #8A2BE2 ;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8rem;
+    transition: width, height, font-size, 1s;
+}
+.net-content {
+
+ }
+.net:hover > .net-cover {
+    width: 0;
+    height: 0;
+    font-size: 0;
+}
+/*-----------------------------------------------------------------*/
+.right-tags {
+    position: relative;
+    overflow: hidden;
+}
+.right-tags-cover {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1s;
+}
+.right-tags-content {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: 100%;
+}
+
+.events {
+    grid-column: 24 / 29;
+    grid-row: 11 / span 7;
+}
+.events-cover {
+    background-color: #1E90FF;
+}
+.events-content {
+    overflow-y: scroll;
+}
+
+.events-content::-webkit-scrollbar {
+    width: 0.5rem;
+}
+.events-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.events-content::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 0.5rem;
+}
+.events-content::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.events:hover > .events-cover {
+    transform: translateX(100%);
+}
+/*-----------------------------------------------------------------*/
+.blog {
+    grid-column: 24 / 29;
+    grid-row: 18 / span 7;
+}
+.blog-cover {
+    background-color: #0000CD ;
+}
+.blog-content {
+
+}
+.blog:hover > .blog-cover {
+    transform: translateX(100%);
+}
+/*-----------------------------------------------------------------*/
+.contacts {
+    grid-column: 24 / 29;
+    grid-row: 25 / 29;
+}
+.contacts-cover {
+    background-color: #000080;
+}
+.contacts-content {
+    height: 100%;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contacts:hover > .contacts-cover {
+    transform: translateX(100%);
+}
+.social a {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    float: left;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    border-radius: 30px;
+    margin: 0 10px 10px 0;
+    padding: 6px;
+    color: #000;
+}
+.instagram a:hover {background: #3f729b; color: #fff;}
+.facebook a:hover {background: #3b5998; color: #fff;}
+.telegram a:hover {background: #249bd7; color: #fff;}
+/*
+.github a:hover {background: #191919; color: #fff;}
+.youtube a:hover {background: #c4302b; color: #fff;}
+.google-pluse a:hover {background: #DD4B39; color: #fff;}
+.twitter a:hover {background: #00acee; color: #fff;}
+.instagram a:hover {background: #3f729b; color: #fff;}
+.facebook a:hover {background: #3b5998; color: #fff;}
+.skype a:hover {background: #00aff0; color: #fff;}
+.vk a:hover {background: #5d84ae; color: #fff;}
+.odnoklassniki a:hover {background: #f93; color: #fff;}
+.pinterest a:hover {background: #c8232c; color: #fff;}
+.linkedin a:hover {background: #0e76a8; color: #fff;}
+.telegram a:hover {background: #249bd7; color: #fff;}
+.tumblr a:hover {background: #34526f; color: #fff;}
+.windows a:hover {background: #125acd; color: #fff;}
+.whatsapp a:hover {background: #50b154; color: #fff;}
+.weibo a:hover {background: #d52b2b; color: #fff;}
+.dropbox a:hover {background: #1087dd; color: #fff;}
+*/
+/*-----------------------------------------------------------------*/
+.messages {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    margin: 0 1rem 1rem 0;
+    width: 16rem;
+    flex-direction: column;
+}
+.message {
+    padding: 0.3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    border-radius: 0.4rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    opacity: 0.8;
+}
+.mes-icon {
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    border-radius: 2rem;
+    font-family: "JetBrains Mono ExtraBold";
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2rem 0;
+}
+.mes-error {
+    background-color: red;
+}
+.mes-error-icon {
+    color: red;
+}
+.mes-success {
+    background-color: green;
+}
+.mes-success-icon {
+    color: green;
+}
+.mes-content > span:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.mes-content > span:nth-child(3) {
+    font-size: 1rem;
+}
+
+.footer {
+    width: 119rem;
+    flex: 0 0 auto;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+/*    border: black solid 1px; */
+}
+
+.content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
